@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		903DA55928B622C300BCE2A4 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903DA55828B622C300BCE2A4 /* main.swift */; };
+		903DA56128B622CE00BCE2A4 /* ZhuiShuKanApi in Frameworks */ = {isa = PBXBuildFile; productRef = 903DA56028B622CE00BCE2A4 /* ZhuiShuKanApi */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				903DA56128B622CE00BCE2A4 /* ZhuiShuKanApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +80,9 @@
 			dependencies = (
 			);
 			name = LightBook;
+			packageProductDependencies = (
+				903DA56028B622CE00BCE2A4 /* ZhuiShuKanApi */,
+			);
 			productName = LightBook;
 			productReference = 903DA55528B622C300BCE2A4 /* LightBook */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +111,9 @@
 				Base,
 			);
 			mainGroup = 903DA54C28B622C300BCE2A4;
+			packageReferences = (
+				903DA55F28B622CE00BCE2A4 /* XCRemoteSwiftPackageReference "ZhuiShuKanApi" */,
+			);
 			productRefGroup = 903DA55628B622C300BCE2A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,6 +292,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		903DA55F28B622CE00BCE2A4 /* XCRemoteSwiftPackageReference "ZhuiShuKanApi" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/underthestars-zhy/ZhuiShuKanApi";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		903DA56028B622CE00BCE2A4 /* ZhuiShuKanApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 903DA55F28B622CE00BCE2A4 /* XCRemoteSwiftPackageReference "ZhuiShuKanApi" */;
+			productName = ZhuiShuKanApi;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 903DA54D28B622C300BCE2A4 /* Project object */;
 }
